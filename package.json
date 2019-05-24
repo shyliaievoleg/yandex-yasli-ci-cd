@@ -1,0 +1,21 @@
+{
+  "name": "yasli-deploy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "echo \"Linter successfully completed\" && exit 0",
+    "test:unit": "mocha",
+    "build": "echo \"Build successfully completed\" && exit 0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4"
+  },
+  "dependencies": {
+    "express": "^4.17.0"
+  }
+}
