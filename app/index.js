@@ -4,4 +4,8 @@ function upperCaseText(text) {
   return text.toUpperCase();
 };
 
-module.exports = {upperCaseText};
+function lowerCaseText(text) {
+  return text.toLowerCase();
+};
+
+module.exports = {upperCaseText, lowerCaseText};
