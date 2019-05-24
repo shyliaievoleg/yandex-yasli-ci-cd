@@ -1,9 +1,9 @@
 'use strict';
 
-const {upperCaseText} = require('../../app/index');
+const {upperCaseText, lowerCaseText} = require('../../app/index');
 const {assert} = require('chai');
 
-describe('Uppercase All', () => {
+describe('Changing Text', () => {
   it('should uppercase text', () => {
     // arrange
     let testText = 'Hello World!';
@@ -11,6 +11,17 @@ describe('Uppercase All', () => {
 
     // act
     let myText = upperCaseText(testText);
+
+    // assert
+    assert.deepEqual(myText, expectedText);
+  });
+  it('should lowercase text', () => {
+    // arrange
+    let testText = 'Hello World!';
+    let expectedText = 'hello world!';
+
+    // act
+    let myText = lowerCaseText(testText);
 
     // assert
     assert.deepEqual(myText, expectedText);
