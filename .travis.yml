@@ -7,3 +7,10 @@ install:
 script:
   - npm run lint
   - npm run test:unit
+deploy:
+  - provider: heroku
+    skip_cleanup: true
+    api_key:
+      secure: KfYuIDadXKGDmCyHozJzUwmZ2SotzBOsb2waCHZUKUNIFvR1IItHmPhpKcAEDCINmg79VRmU1mepn59sfEtQPZvYlk6AtZuNNIvvA1gX9p0SvtvOgGcAV1qr8GGh3YSN5hIhVNqdhafn0yBd8lCAtKEs8Qphx7ooRaZUEkRmgYcNn46u9Qaigyky3EQAf/rW3NWNpGOXCQGoJxODbLzdZwdMw9vdWeHbOGGDoCNQEvNfBKeGm6VzKN+Y2tBG10qXtrLcVAYyX4MJpn0I2YGERGo5Kz+LrfuTlvvSCzMR2pY+q6C3qiarAkoT/B8fuMMAXsF6C0XzaQD7gEtqSmVwhR8mfWnrpA8S4ttmRI0RhBR53hRd5o5g/YOYV5X4s16iaF/f8yrz0DJ1CX/OQJrVUZ1v0DK/AaRp7ZmN8MyckgGzq8hECavanb9gVV6MVllWpqRPU3IParP+fqVKTJY2RNBUXk/m13nZr34LxWGpqz1D4RlWRP++6sPRZAbNnM3TbYupScXRpodaFILopna2XC0FNoWAeYMsKSIzItw0k4GO+dOPey6x6kIWwiehSWY6hc6exRqgSiN4QckPedcidp14+MluViKHVomEr8hKRJLLTILDWAM9bnbtw/xqb1S+Fw2XIIdRHUyyS4xr5xeVWGTxry+E15LeHBc6S4mV2nQ=
+    app:
+      master: yasli-deploy
