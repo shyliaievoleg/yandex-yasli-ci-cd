@@ -32,7 +32,7 @@ describe('Changing Text', () => {
     let expectedText = 'H';
 
     // act
-    let myText = lowerCaseText(testText);
+    let myText = firstLetter(testText);
 
     // assert
     assert.deepEqual(myText, expectedText);
