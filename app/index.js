@@ -8,4 +8,8 @@ function lowerCaseText(text) {
   return text.toLowerCase();
 };
 
-module.exports = {upperCaseText, lowerCaseText};
+function firstLetter(text) {
+  return text.slice(1, 1);
+};
+
+module.exports = {upperCaseText, lowerCaseText, firstLetter};
