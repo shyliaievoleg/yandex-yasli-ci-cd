@@ -9,7 +9,7 @@ function lowerCaseText(text) {
 };
 
 function firstLetter(text) {
-  return text.slice(1, 1);
+  return text.slice(0, 1);
 };
 
 module.exports = {upperCaseText, lowerCaseText, firstLetter};
